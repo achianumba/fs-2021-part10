@@ -1,6 +1,5 @@
 import React from "react";
 import { Pressable } from "react-native";
-import AppBar from "./AppBar";
 import Text from "./Text";
 
 const AppBarTab = ({ text }) => {
