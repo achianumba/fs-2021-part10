@@ -42,7 +42,7 @@ const FormikTextInput = ({ name, label, ...props }) => {
         style={[
           styles.textInput,
           showError
-            ? { borderColor: "#d73a4a" }
+            ? { borderColor: theme.colors.danger }
             : { borderColor: theme.colors.textSecondary },
         ]}
         {...props}
