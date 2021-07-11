@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     height: 48,
     flex: 0,
     flexGrow: 0,
-    flexShrink: 0,
     flexBasis: 48,
     marginRight: theme.spacer[2],
   },

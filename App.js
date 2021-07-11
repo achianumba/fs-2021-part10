@@ -1,12 +1,18 @@
 import React from "react";
-import Main from "./src/components/Main";
 import { NativeRouter } from "react-router-native";
-import FormikTextInput from "./src/components/FormikTextInput";
+import { ApolloProvider } from "@apollo/client";
+
+import Main from "./src/components/Main";
+import createApolloClient from "./src/utils/apolloClient";
+
+const apolloClient = createApolloClient();
 
 export default () => {
   return (
     <NativeRouter>
+      <ApolloProvider client={apolloClient}>
       <Main />
+      </ApolloProvider>
     </NativeRouter>
   );
 };
