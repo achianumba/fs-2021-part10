@@ -7,11 +7,12 @@ import createApolloClient from "./src/utils/apolloClient";
 
 const apolloClient = createApolloClient();
 
+// eslint-disable-next-line react/display-name
 export default () => {
   return (
     <NativeRouter>
       <ApolloProvider client={apolloClient}>
-      <Main />
+        <Main />
       </ApolloProvider>
     </NativeRouter>
   );
